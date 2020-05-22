@@ -1,9 +1,18 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
     background:#2C2141;
     display: flex;
     min-height: 100vh; /* bez tego body jest ograniczone do wysokości contentu */
     align-items: center;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; /* ustawienie fontu dla całego dokumentu */
 }
 
 .main{
@@ -11,4 +20,36 @@ body{
     border-radius: 16px;
     width: 624px;
     margin: 16px;
+    padding: 32px;
+}
+
+.person{
+
+}
+
+.person__description{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.person__name{
+    font-size: 36px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.person__position{
+    font-size: 18px;
+    color: #545454;
+    font-style: italic;
+    margin: 0;
+}
+
+.person__link{
+    color: #E20613;
+}
+
+.selected-orange{
+    color:#ED6D05;
+    font-weight: normal;
 }
